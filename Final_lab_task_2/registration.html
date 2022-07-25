@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title> </title>
+  </head>
+
+  <body>
+    <form onsubmit="return validate()"></form> >
+      <fieldset>
+        <legend>Sign Up</legend>
+        <table>
+          <tr>
+            <td>Username</td>
+            <td>
+              <input type="text" name="username" value="" id="username" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" value="" id="email" /></td>
+          </tr>
+
+          <tr>
+            <td>Password</td>
+            <td>
+              <input type="password" name="password" value="" id="password" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Phone No</td>
+            <td>
+              <input type="number" name="Phnno" value="" id="phnno" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Gender</td>
+            <td>
+              <select name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Address</td>
+            <td>
+              <textarea name="address" id="" cols="21" rows="5"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><hr /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" />
+              <a href="login.html" class="">Login</a>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  
+    <script>
+       function validate(){
+          let Username = document.getElementById("username").value;
+          let Email = document.getElementById("email").value;
+          let Password = document.getElementById("password").value;
+          if ( username == "") {
+            document.getElementById("username").innerHTML="username can not be empty";
+            return false;
+          }
+          else
+          {
+          return true;
+          }
+          
+          if ( email == "") {
+            document.getElementById("email").innerHTML="email can not be empty";
+            return false;
+          }
+          else
+          {
+          return true;
+          }
+          
+          if ( password == "" ) {
+            document.getElementById("password").innerHTML="password can not be empty";
+            return false;
+          }
+          else
+          {
+            return true;
+          } 
+        }
+    </script>
+  </body>
+</html>
